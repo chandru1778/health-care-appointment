@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>MediZap – Healthcare, made simple.</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "on-error-container": "#93000a", "error": "#ba1a1a", "primary-fixed-dim": "#4eddbb", "surface-container-high": "#eae7e7", "tertiary": "#006e26", "primary": "#006b58", "on-secondary-fixed-variant": "#004b73", "secondary": "#006397", "outline-variant": "#bbcac3", "surface-variant": "#e5e2e1", "on-secondary-container": "#00476e", "surface-container": "#f0eded", "on-background": "#1b1b1b", "on-primary-fixed-variant": "#005141", "surface-container-low": "#f6f3f2", "tertiary-fixed": "#8dfa96", "primary-fixed": "#6ff9d6", "outline": "#6c7a75", "surface-dim": "#dcd9d9", "on-primary-fixed": "#002019", "on-primary": "#ffffff", "on-secondary-fixed": "#001d31", "inverse-on-surface": "#f3f0ef", "secondary-fixed-dim": "#92ccff", "on-surface-variant": "#3c4a45", "secondary-container": "#5cb8fd", "surface-container-lowest": "#ffffff", "on-primary-container": "#004538", "surface-container-highest": "#e5e2e1", "error-container": "#ffdad6", "inverse-surface": "#313030", "background": "#fcf9f8", "surface-bright": "#fcf9f8", "surface-tint": "#006b58", "on-tertiary-container": "#004716", "tertiary-fixed-dim": "#71dd7c", "on-surface": "#1b1b1b", "tertiary-container": "#50bc60", "secondary-fixed": "#cce5ff", "inverse-primary": "#4eddbb", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface": "#fcf9f8", "on-tertiary-fixed": "#002106", "primary-container": "#1abc9c", "on-tertiary-fixed-variant": "#00531b" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "gutter-sm": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "gutter": "1.5rem", "margin": "1.5rem", "margin-sm": "1rem", "margin-lg": "3rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter-lg": "2rem" }, "fontFamily": { "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "caption": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-badge": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "title-card": ["Plus Jakarta Sans"], "body-base": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-xl": ["38px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "caption": ["11px", { "lineHeight": "14px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-badge": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-card": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-base": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-base text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,28,28,0.04)]"><div class="h-[70px] w-full px-margin md:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="MediZap Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0rOisheccj78O_LSNlcAY2xj7Y9cQvXTxj-NVvFWDOu_YnyP78Rtz1Xut5oDIDSSjIUYuU4QkCBd5puQsoIDH2IxNeTyXOl2pvMnQjLOwwFvm4OolUWT8rhBUxPcJ3Hy6v7hcVH7G07P-iBf_ywL6D_xSarM5x4qBelMHgS3_CRIPFzpPovYJtg3x1UvAXzKkxsIhSF8GueMRLjRnJCtYb0Z2O8uAWowMh6EPM5c"/><div class="flex flex-col"><span class="font-title-card text-title-card text-on-surface leading-none tracking-tight font-bold">MediZap</span><span class="font-caption text-caption text-on-surface-variant leading-none mt-1 hidden sm:inline-block">Healthcare, made simple.</span></div></div><div class="hidden xl:flex items-center gap-space-sm flex-1 max-w-2xl mx-space-md"><button class="flex items-center gap-space-xs px-3 py-2 bg-surface-container-low hover:bg-surface-container rounded-lg text-on-surface-variant hover:text-on-surface transition-colors flex-shrink-0" type="button"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span class="font-body-sm text-body-sm">Select your location</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><div class="flex-1 flex items-center bg-surface-container-low rounded-lg px-3 py-1.5 focus-within:bg-surface-container-lowest focus-within:ring-2 focus-within:ring-primary-container/20 transition-all"><span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder-outline focus:outline-none" placeholder="Search doctors, hospitals, specialties..." type="text"/></div><button class="flex items-center gap-1.5 px-3 py-2 bg-primary-container/15 hover:bg-primary-container/25 text-primary rounded-lg transition-colors flex-shrink-0" type="button"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span class="font-label-badge text-label-badge">AI Search ✨</span></button></div><div class="flex items-center gap-space-md flex-shrink-0"><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-primary font-bold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a aria-current="page" class="transition-colors text-primary font-bold" data-path="find-doctors" href="#">Find Doctors</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="hospitals" href="#">Hospitals</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-appointments" href="#">My Appointments</a></nav><div class="flex items-center gap-space-sm"><a class="hidden md:inline-flex font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-2 transition-colors" data-path="login" href="#">Login</a><a class="inline-flex items-center justify-center font-label-md text-label-md bg-primary-container hover:bg-primary text-on-primary px-4 py-2 rounded-lg transition-all shadow-[0_1px_3px_0_rgba(28,28,28,0.04)]" data-path="signup" href="#">Sign Up</a><button aria-label="User profile dropdown" class="flex items-center p-0.5 rounded-full hover:ring-2 hover:ring-primary-container transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv0vRvQybrD0gVepCqtqj0hoyCxCKGnaKbM_wQiruParP60YnROQvkB8HqBczrvMKPLJH9oXHDQeqaqvo2vQZVqmj7k3s9y_j-usEBaKE7ccUQzrsroydCb99Ge3kdRR40EvVQH-jKrga67YccjgcW_hOEy7NLgSQAzaIIslPizfyGKwcL-rCKTQqUAcGQXAiH07CLabOa_s5way9pIUbqu-7YZlKsPlF0p69oSvk"/></button></div></div></div></header><main class="w-full pt-[70px] bg-surface min-h-[calc(100vh-360px)]"><div class="flex flex-col w-full">
+<!-- Interactive State Scripts & Top Notification -->
+<div class="w-full bg-surface-container-low px-margin md:px-margin-lg py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-primary text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Verified Clinical Registry: All 1,420+ specialists are board-certified and currently accepting in-person or telehealth consults.</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-badge text-caption">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+        Real-time slots updated 3 mins ago
+      </span>
+<button class="text-secondary hover:text-primary transition-colors font-label-badge text-caption flex items-center gap-0.5" type="button">
+        Need Emergency Care?
+        <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Main Workstation Layout -->
+<div class="w-full px-margin md:px-margin-lg py-space-lg flex flex-col gap-space-lg">
+<!-- SEARCH & MULTI-DIMENSIONAL TRIAGE FILTER BAR -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Search Input Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Keyword / Doctor Name Search -->
+<div class="md:col-span-4 flex items-center bg-surface-container-low rounded-lg px-3 py-2.5">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder-outline focus:outline-none" placeholder="Search doctor, procedure, or condition..." type="text" value="Dr. Michael O'Connell"/>
+<button class="text-outline hover:text-on-surface transition-colors p-1" title="Clear" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Specialty Selector -->
+<div class="md:col-span-3 flex items-center bg-surface-container-low rounded-lg px-3 py-2.5 justify-between cursor-pointer">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">cardiology</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Cardiology (Heart Care)</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">arrow_drop_down</span>
+</div>
+<!-- Hospital Affiliation -->
+<div class="md:col-span-3 flex items-center bg-surface-container-low rounded-lg px-3 py-2.5 justify-between cursor-pointer">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_hospital</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Apollo Care &amp; Metro Heart</span>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">arrow_drop_down</span>
+</div>
+<!-- Quick AI Filter CTA -->
+<div class="md:col-span-2 flex items-center">
+<button class="w-full h-[42px] bg-primary text-on-primary hover:bg-on-primary-container font-label-md text-label-md rounded-lg flex items-center justify-center gap-2 shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+            Filter Results
+          </button>
+</div>
+</div>
+<!-- Fine-Grain Filters Sub-row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Availability Toggles -->
+<div class="flex items-center bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1 bg-surface-container-lowest text-primary font-label-badge text-caption rounded shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              Available Today
+            </button>
+<button class="px-3 py-1 text-on-surface-variant hover:text-on-surface font-label-badge text-caption rounded transition-all" type="button">
+              This Weekend
+            </button>
+<button class="px-3 py-1 text-on-surface-variant hover:text-on-surface font-label-badge text-caption rounded transition-all" type="button">
+              Telehealth Ready
+            </button>
+</div>
+<!-- Experience Pill -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-body-sm text-caption transition-colors" type="button">
+<span>Experience: <strong>10+ Years</strong></span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<!-- Rating Filter -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-body-sm text-caption transition-colors" type="button">
+<span class="material-symbols-outlined text-primary text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>Rating: <strong>4.5+</strong></span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<!-- Fee Range Slider Widget -->
+<div class="hidden xl:flex items-center gap-2 px-3 py-1.5 bg-surface-container-low rounded-lg text-caption font-body-sm text-on-surface-variant">
+<span>Fee: $30 - $120</span>
+<div class="w-20 h-1.5 bg-surface-container-highest rounded-full relative">
+<div class="absolute left-2 right-4 h-full bg-primary-container rounded-full"></div>
+</div>
+</div>
+<!-- Reset Filter -->
+<button class="text-outline hover:text-error transition-colors font-label-badge text-caption" type="button">
+            Reset all
+          </button>
+</div>
+<!-- Sort Menu -->
+<div class="flex items-center gap-2">
+<span class="font-caption text-caption text-on-surface-variant">Sort by:</span>
+<div class="flex items-center gap-1 bg-surface-container-low px-2.5 py-1.5 rounded-lg cursor-pointer">
+<span class="font-label-badge text-caption text-on-surface">Highest Rated</span>
+<span class="material-symbols-outlined text-outline text-[16px]">swap_vert</span>
+</div>
+</div>
+</div>
+</div>
+<!-- MAIN TWO-COLUMN WORKFLOW: DOCTORS DIRECTORY (LEFT) + INTERACTIVE BOOKING WORKFLOW (RIGHT) -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- LEFT COLUMN: DOCTORS DIRECTORY (7 Cols on desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Results Counter & Live Indicator -->
+<div class="flex items-center justify-between px-1">
+<div class="flex items-baseline gap-2">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Available Cardiologists</h1>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(18 Specialists Found)</span>
+</div>
+<span class="text-caption font-caption text-primary flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+            Live Calendar Sync
+          </span>
+</div>
+<!-- Doctor Card 1: Featured (Selected / Dr. Michael O'Connell MD) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-md transition-all relative overflow-hidden">
+<!-- Active Selection Accent Indicator -->
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pl-2">
+<div class="flex items-center gap-space-md">
+<div class="relative flex-shrink-0">
+<img class="w-20 h-20 rounded-xl object-cover shadow-sm" data-alt="Warm and confident middle-aged male cardiologist wearing a tailored white medical lab coat and dark stethoscope, smiling reassuringly in a modern sunlit hospital corridor with teal glass accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWyIlaQhoQSWsVo3FDblzdd5cfXm35Fabgi8bKyJ3uQsfxXwGt-9BriHHee4njBKoXlFg_NPL68UR_1yVLheRFUKNb7HmvwzMpm8fbU4qk4Uu_ZRNOQ5WO4uzIZD3i-CpEJ5zruop2A3c5NXydbobhv-AiDQuuJ2K2wLG65dJg5M0qk1M-ihIpl5NY1-T3p76-5mrLgUr_1PZtx3_hFmXOFvVoPXIGBXqKJa6PxuM"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 bg-tertiary rounded-full ring-2 ring-surface-container-lowest" title="Available for consults today"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h2 class="font-title-card text-title-card text-on-surface font-bold">Dr. Michael E. O'Connell</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-badge text-caption">Cardiology</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">MD, DM Cardiology, FACC • Fellow of Cardiology</p>
+<div class="flex items-center gap-3 mt-1 text-caption font-caption text-on-surface-variant flex-wrap">
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.9 (340+ reviews)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">workspace_premium</span>
+                    16+ Years Exp.
+                  </span>
+</div>
+</div>
+</div>
+<!-- Consultation Fee & Action -->
+<div class="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto pt-2 sm:pt-0">
+<div class="text-left sm:text-right">
+<span class="font-caption text-caption text-on-surface-variant block">Consultation Fee</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$60</span>
+</div>
+</div>
+</div>
+<!-- Divider -->
+<div class="w-full h-[1px] bg-surface-container"></div>
+<!-- Metadata & Hospital Details -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pl-2">
+<div class="flex items-center gap-2 font-body-sm text-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-outline text-[18px]">location_on</span>
+<span>Apollo Care Heart Institute • <strong>2.5 km away</strong></span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+<span>Next In-Clinic Slot: <strong class="text-tertiary font-bold">Today, 03:00 PM</strong></span>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between gap-space-sm pt-space-xs pl-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary font-label-badge text-caption">
+<span class="material-symbols-outlined text-[14px]">videocam</span> Telehealth Available
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-badge text-caption">
+<span class="material-symbols-outlined text-[14px]">local_pharmacy</span> In-house ECG
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-2 text-on-surface hover:text-primary font-label-md text-caption rounded-lg transition-colors" type="button">
+                Profile &amp; Credentials
+              </button>
+<button class="px-4 py-2 bg-primary text-on-primary hover:bg-on-primary-container font-label-md text-caption rounded-lg shadow-sm transition-all flex items-center gap-1" type="button">
+<span>Select &amp; Schedule</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Doctor Card 2: Dr. Arjun Kumar -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md flex flex-col gap-space-md transition-all">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="relative flex-shrink-0">
+<img class="w-20 h-20 rounded-xl object-cover shadow-sm" data-alt="Distinguished South Asian senior male interventional cardiologist with short hair and glasses, wearing a clinical coat and blue lanyard in front of an advanced cardiac imaging laboratory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXjWZpFrWpxXqPvz6MY42YqIg7bItp5STwcgdbnZeAdOp8GhMwwcGScI2t9zI6zRa-n1vptWxajLrnu-yo09S5WmTITm0kaDBtZxNofJuSBljY7ogtkHxOh1-eUPA5l9wyldoZetaepFlWiDDWw_4FNxaE7Slr2CO25FCw5sUUL28eCqf-SRNuZSTYoKjfrIFpwMFik9PRBWF8uhxCwKkw-R62c6PM1gei-e7S2tI"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 bg-tertiary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-card text-title-card text-on-surface font-bold">Dr. Arjun Kumar</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-badge text-caption">Interventional Cardiology</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">MD, DM, FSCAI • Angioplasty Specialist</p>
+<div class="flex items-center gap-3 mt-1 text-caption font-caption text-on-surface-variant flex-wrap">
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.9 (420+ reviews)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">workspace_premium</span>
+                    20+ Years Exp.
+                  </span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto pt-2 sm:pt-0">
+<div class="text-left sm:text-right">
+<span class="font-caption text-caption text-on-surface-variant block">Consultation Fee</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$75</span>
+</div>
+</div>
+</div>
+<div class="w-full h-[1px] bg-surface-container"></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex items-center gap-2 font-body-sm text-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-outline text-[18px]">location_on</span>
+<span>Metro Heart &amp; Vascular Institute • <strong>4.1 km away</strong></span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+<span>Next In-Clinic Slot: <strong class="text-tertiary font-bold">Tomorrow, 10:30 AM</strong></span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-badge text-caption">
+<span class="material-symbols-outlined text-[14px]">domain</span> Cath Lab Certified
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-2 text-on-surface hover:text-primary font-label-md text-caption rounded-lg transition-colors" type="button">
+                View Profile
+              </button>
+<button class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-caption rounded-lg transition-all" type="button">
+                Select Doctor
+              </button>
+</div>
+</div>
+</div>
+<!-- Doctor Card 3: Dr. Elena Rostova -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md flex flex-col gap-space-md transition-all">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="relative flex-shrink-0">
+<img class="w-20 h-20 rounded-xl object-cover shadow-sm" data-alt="Professional female pediatric cardiologist in her late thirties with a friendly demeanor, wearing a white coat with stethoscope, soft medical clinic background in soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD958vvVO78TOup0XgT7nxRKB-29IgveKuWnVtfuPoPiANrSj_E1xP7RMJr_V3JmKArjp6bE1F_Qtruke13SlJ4JQnSrI4X5SzD6idD6kYQzg4vOclaDEZqXIfr5GP_LhgOnxxMTYmDCB-oTDmcngguvHsbz75jg6tyIWtIcE7bjyoUTDWqNHP42fypBO7tlzio6dcfbR-2t0NLR1QZIjo0-PB4neCAIYazc0Hh0CQ"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 bg-tertiary rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 flex-wrap">
+<h3 class="font-title-card text-title-card text-on-surface font-bold">Dr. Elena Rostova</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-badge text-caption">Pediatric Cardiology</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">MD, PhD, FACC • Congenital Heart Disease</p>
+<div class="flex items-center gap-3 mt-1 text-caption font-caption text-on-surface-variant flex-wrap">
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    4.8 (215 reviews)
+                  </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-outline">workspace_premium</span>
+                    14+ Years Exp.
+                  </span>
+</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto pt-2 sm:pt-0">
+<div class="text-left sm:text-right">
+<span class="font-caption text-caption text-on-surface-variant block">Consultation Fee</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">$65</span>
+</div>
+</div>
+</div>
+<div class="w-full h-[1px] bg-surface-container"></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex items-center gap-2 font-body-sm text-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-outline text-[18px]">location_on</span>
+<span>St. Jude Children's Medical Center • <strong>5.8 km away</strong></span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-caption text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+<span>Next In-Clinic Slot: <strong class="text-tertiary font-bold">Today, 05:15 PM</strong></span>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container/15 text-primary font-label-badge text-caption">
+<span class="material-symbols-outlined text-[14px]">videocam</span> Video &amp; Clinic
+              </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-2 text-on-surface hover:text-primary font-label-md text-caption rounded-lg transition-colors" type="button">
+                View Profile
+              </button>
+<button class="px-4 py-2 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-caption rounded-lg transition-all" type="button">
+                Select Doctor
+              </button>
+</div>
+</div>
+</div>
+<!-- Load More Specialists Pagination -->
+<div class="w-full py-space-sm flex items-center justify-between bg-surface-container-low px-space-md rounded-xl">
+<span class="font-caption text-caption text-on-surface-variant">Showing 1-3 of 18 Specialists</span>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-badge text-caption flex items-center justify-center shadow-sm" type="button">1</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-badge text-caption flex items-center justify-center transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-badge text-caption flex items-center justify-center transition-colors" type="button">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container font-label-badge text-caption flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: INTERACTIVE APPOINTMENT SCHEDULER & REAL-TIME BOOKING PANEL (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md sticky top-[90px]">
+<!-- Live Scheduling Container -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-lg p-space-lg flex flex-col gap-space-md">
+<!-- Booking Header with Selected Doctor summary -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-xl object-cover" data-alt="Portrait of Dr Michael O'Connell, confident cardiologist with stethoscope, welcoming smile in clinical setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1ItRRjHsAw9Pklse24Derx7NEahh7ozkxbo1zNqGlJPfAOBv34mbDhaYHBzB2a7cabf0GXPvCBRFAmTfne169jY4Q32HCZ-P1bqtdlhJHePHojt8luTRzOK2iEtkUUIkLsW0Clzj6pwcCMlnD4gwhFD18BauzzxOH_YLZWnmFzgOZMoCtOAIckjACWVGIVmZ8_9SCo0N4uQFqLywm3BQf6AvYhxvcDI4grThv7Wk"/>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-primary uppercase font-bold tracking-wide">Instant Booking</span>
+<h2 class="font-title-card text-title-card text-on-surface font-bold leading-tight">Dr. Michael E. O'Connell</h2>
+<span class="font-body-sm text-caption text-on-surface-variant">Cardiology • Apollo Care ($60)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-surface">info</span>
+</div>
+<!-- Section 1: Week Date Selector -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Select Date</span>
+<span class="font-caption text-caption text-primary cursor-pointer hover:underline">March 2025</span>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<!-- Monday 24 -->
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center">
+<span class="font-caption text-caption text-on-surface-variant uppercase">Mon</span>
+<span class="font-title-card text-body-lg font-bold text-on-surface mt-0.5">24</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1"></span>
+</div>
+<!-- Tuesday 25 (Active / Selected) -->
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-primary text-on-primary cursor-pointer shadow-sm text-center">
+<span class="font-caption text-caption uppercase text-primary-fixed">Tue</span>
+<span class="font-title-card text-body-lg font-bold mt-0.5">25</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed mt-1"></span>
+</div>
+<!-- Wednesday 26 -->
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center">
+<span class="font-caption text-caption text-on-surface-variant uppercase">Wed</span>
+<span class="font-title-card text-body-lg font-bold text-on-surface mt-0.5">26</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary mt-1"></span>
+</div>
+<!-- Thursday 27 -->
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center">
+<span class="font-caption text-caption text-on-surface-variant uppercase">Thu</span>
+<span class="font-title-card text-body-lg font-bold text-on-surface mt-0.5">27</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary mt-1"></span>
+</div>
+<!-- Friday 28 -->
+<div class="flex flex-col items-center justify-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center">
+<span class="font-caption text-caption text-on-surface-variant uppercase">Fri</span>
+<span class="font-title-card text-body-lg font-bold text-on-surface mt-0.5">28</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant mt-1"></span>
+</div>
+</div>
+</div>
+<!-- Section 2: Time Slots Segmented by Day Shift -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Available Slots for Tue, Mar 25</span>
+<span class="font-caption text-caption text-on-surface-variant">Clinic &amp; Video</span>
+</div>
+<!-- Morning Shift -->
+<div class="flex flex-col gap-1.5">
+<span class="font-caption text-caption text-outline uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">wb_twilight</span> Morning
+              </span>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container rounded-lg font-body-sm text-caption text-on-surface transition-all" type="button">09:00 AM</button>
+<button class="py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container rounded-lg font-body-sm text-caption text-on-surface transition-all" type="button">09:30 AM</button>
+<button class="py-2 px-1 text-center bg-surface-container-high/50 rounded-lg font-body-sm text-caption text-outline cursor-not-allowed line-through" disabled="" type="button">10:00 AM</button>
+<button class="py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container rounded-lg font-body-sm text-caption text-on-surface transition-all" type="button">11:30 AM</button>
+</div>
+</div>
+<!-- Afternoon Shift -->
+<div class="flex flex-col gap-1.5">
+<span class="font-caption text-caption text-outline uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">light_mode</span> Afternoon
+              </span>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container rounded-lg font-body-sm text-caption text-on-surface transition-all" type="button">02:00 PM</button>
+<!-- Selected Slot -->
+<button class="py-2 px-1 text-center bg-primary text-on-primary rounded-lg font-body-sm text-caption font-bold shadow-sm ring-2 ring-primary-container" type="button">03:00 PM</button>
+<button class="py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container rounded-lg font-body-sm text-caption text-on-surface transition-all" type="button">04:30 PM</button>
+<button class="py-2 px-1 text-center bg-surface-container-high/50 rounded-lg font-body-sm text-caption text-outline cursor-not-allowed line-through" disabled="" type="button">05:00 PM</button>
+</div>
+</div>
+<!-- Evening Shift -->
+<div class="flex flex-col gap-1.5">
+<span class="font-caption text-caption text-outline uppercase font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bedtime</span> Evening
+              </span>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container rounded-lg font-body-sm text-caption text-on-surface transition-all" type="button">06:00 PM</button>
+<button class="py-2 px-1 text-center bg-surface-container-low hover:bg-surface-container rounded-lg font-body-sm text-caption text-on-surface transition-all" type="button">06:30 PM</button>
+<span class="col-span-2"></span>
+</div>
+</div>
+</div>
+<!-- Section 3: Consultation Mode Picker -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface">Consultation Type</span>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low cursor-pointer flex items-center gap-2 transition-all">
+<span class="material-symbols-outlined text-primary text-[20px]">domain</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-badge text-caption text-on-surface">In-Clinic Visit</span>
+<span class="font-caption text-caption text-on-surface-variant truncate">Apollo Care Hospital</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-primary-container/20 ring-1 ring-primary-container cursor-pointer flex items-center gap-2 transition-all">
+<span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-badge text-caption text-primary">Telehealth Video</span>
+<span class="font-caption text-caption text-primary/80 truncate">Secure HD Call</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Patient Info & Clinical Note -->
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface">Patient Details</span>
+<div class="bg-surface-container-low p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-bold text-caption flex items-center justify-center">AM</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-caption text-on-surface">Alex Morgan (Self)</span>
+<span class="font-caption text-caption text-on-surface-variant">+1 (555) 438-9921 • alex.m@healthmail.com</span>
+</div>
+</div>
+<button class="text-primary hover:text-on-primary-container font-label-badge text-caption" type="button">Edit</button>
+</div>
+<div class="mt-1">
+<input class="w-full bg-surface-container-low rounded-lg px-3 py-2 font-body-sm text-body-sm text-on-surface placeholder-outline focus:outline-none focus:bg-surface-container" placeholder="Reason for visit / symptoms (e.g., Routine cardiac follow-up, BP check)" type="text"/>
+</div>
+</div>
+<!-- Price Summary & Primary Booking CTA -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Doctor Consultation Fee</span>
+<span>$60.00</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Platform Triage &amp; Booking Fee</span>
+<span class="text-tertiary font-bold">FREE ($0.00)</span>
+</div>
+<div class="w-full h-[1px] bg-surface-container"></div>
+<div class="flex items-center justify-between font-label-md text-label-md text-on-surface">
+<span>Total Payable</span>
+<span class="text-primary font-bold text-title-card">$60.00</span>
+</div>
+<button class="w-full py-3 bg-primary text-on-primary hover:bg-on-primary-container font-label-md text-label-md rounded-lg shadow-md transition-all flex items-center justify-center gap-2 mt-1" type="button">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+              Confirm &amp; Book Appointment ($60)
+            </button>
+<p class="font-caption text-caption text-outline text-center">
+              Free cancellation up to 2 hours before scheduled slot • Instant SMS &amp; Calendar Invite
+            </p>
+</div>
+</div>
+<!-- LIVE CONFIRMATION PREVIEW CARD (Simulated Successful Workflow) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-badge text-label-badge text-tertiary">Booking Ready For Quick Checkout</span>
+</div>
+<span class="font-caption text-caption text-outline">Ref #MZ-88492</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center justify-between gap-space-sm">
+<div class="flex flex-col gap-0.5">
+<span class="font-caption text-caption text-on-surface-variant">Scheduled Slot</span>
+<span class="font-label-md text-body-sm text-on-surface font-bold">Tuesday, Mar 25 • 03:00 PM</span>
+<span class="font-caption text-caption text-primary">Apollo Care Heart Clinic • Room 314</span>
+</div>
+<!-- Scaled Inline QR Representation -->
+<div class="w-14 h-14 bg-surface-container-lowest p-1 rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 40 40">
+<path d="M4 4h12v12H4zm2 2v8h8V6zm18-2h12v12H24zm2 2v8h8V6zM4 24h12v12H4zm2 2v8h8v-8zm18 0h4v4h-4zm8 0h4v4h-4zm-8 8h4v4h-4zm8 0h4v4h-4zm-4-4h4v4h-4zM8 8h4v4H8zm20 0h4v4h-4zM8 28h4v4H8z"></path>
+</svg>
+</div>
+</div>
+<div class="flex items-center justify-between gap-space-xs pt-1">
+<button class="flex-1 py-1.5 px-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-badge text-caption rounded-lg transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">event</span>
+              Add to Google Cal
+            </button>
+<button class="flex-1 py-1.5 px-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-badge text-caption rounded-lg transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+              Download Slip
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- VALUE-ADD CLINICAL STATS & HOSPITAL NETWORK HIGHLIGHTS -->
+<div class="w-full mt-space-md grid grid-cols-1 md:grid-cols-4 gap-gutter-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-card text-title-card text-on-surface font-bold">100% Board Certified</span>
+<span class="font-caption text-caption text-on-surface-variant">Rigorous background verification</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-card text-title-card text-on-surface font-bold">&lt; 15 Min Wait Time</span>
+<span class="font-caption text-caption text-on-surface-variant">Guaranteed queue reservation</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">shield_with_heart</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-card text-title-card text-on-surface font-bold">Zero Booking Markup</span>
+<span class="font-caption text-caption text-on-surface-variant">Pay standard clinic consultation rate</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-card text-title-card text-on-surface font-bold">24/7 Patient Care</span>
+<span class="font-caption text-caption text-on-surface-variant">Dedicated clinical concierge team</span>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(28,28,28,0.02)]"><div class="w-full px-margin md:px-margin-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-lg"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><img alt="MediZap Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0rOisheccj78O_LSNlcAY2xj7Y9cQvXTxj-NVvFWDOu_YnyP78Rtz1Xut5oDIDSSjIUYuU4QkCBd5puQsoIDH2IxNeTyXOl2pvMnQjLOwwFvm4OolUWT8rhBUxPcJ3Hy6v7hcVH7G07P-iBf_ywL6D_xSarM5x4qBelMHgS3_CRIPFzpPovYJtg3x1UvAXzKkxsIhSF8GueMRLjRnJCtYb0Z2O8uAWowMh6EPM5c"/><span class="font-title-card text-title-card text-on-surface font-bold">MediZap</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">AI-powered healthcare network connecting patients with verified medical professionals and accredited hospital networks for rapid care delivery.</p><div class="flex items-center gap-2 pt-space-xs"><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-badge text-caption"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>24/7 Verified Network</span></div></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Services</h3><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="find-doctors" href="#">Doctor Consultations</a></li><li><a class="hover:text-primary transition-colors" data-path="hospitals" href="#">Hospital Emergency Booking</a></li><li><a class="hover:text-primary transition-colors" data-path="telehealth" href="#">Telehealth Video Triage</a></li><li><a class="hover:text-primary transition-colors" data-path="diagnostics" href="#">Diagnostic Labs &amp; Scans</a></li><li><a class="hover:text-primary transition-colors" data-path="home" href="#">AI Symptom Assessment</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">For Healthcare Partners</h3><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="partner-doctors" href="#">MediZap for Doctors</a></li><li><a class="hover:text-primary transition-colors" data-path="partner-clinics" href="#">Clinic Management Suite</a></li><li><a class="hover:text-primary transition-colors" data-path="partner-hospitals" href="#">Hospital Integration API</a></li><li><a class="hover:text-primary transition-colors" data-path="partner-emr" href="#">EMR Interoperability</a></li><li><a class="hover:text-primary transition-colors" data-path="partner-apply" href="#">Join Provider Directory</a></li></ul></div><div class="flex flex-col gap-space-sm"><h3 class="font-label-md text-label-md text-on-surface uppercase tracking-wider">Support</h3><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="help-center" href="#">Patient Help Desk</a></li><li><a class="hover:text-primary transition-colors" data-path="emergency-directory" href="#">Emergency Contacts</a></li><li><a class="hover:text-primary transition-colors" data-path="billing-faqs" href="#">Insurance &amp; Billing</a></li><li><a class="hover:text-primary transition-colors" data-path="contact" href="#">Contact Support Team</a></li><li><a class="hover:text-primary transition-colors" data-path="feedback" href="#">Patient Care Feedback</a></li></ul></div></div><div class="mt-space-xl pt-space-lg bg-surface-container-high/40 rounded-xl p-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md"><div class="flex flex-col gap-1"><span class="font-label-badge text-label-badge text-on-surface uppercase tracking-wide">Legal Disclaimer</span><p class="font-caption text-caption text-on-surface-variant leading-relaxed max-w-4xl">MediZap is a digital discovery and scheduling platform. In the event of an urgent medical crisis or life-threatening situation, immediately call local emergency services (e.g., 911) or proceed directly to the nearest hospital trauma center.</p></div><div class="flex items-center gap-space-md font-caption text-caption text-on-surface-variant flex-shrink-0"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" data-path="hipaa-compliance" href="#">HIPAA Security</a></div></div><div class="mt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center sm:text-left"><p class="font-caption text-caption text-on-surface-variant">© 2025 MediZap Health Technologies Inc. All rights reserved.</p><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary"></span><span class="font-caption text-caption text-on-surface-variant">All systems operational</span></div></div></div></footer><div class="fixed bottom-6 right-6 z-50 flex items-center justify-center"><button aria-label="Open AI Health Assistant" class="w-14 h-14 rounded-full bg-primary-container text-on-primary hover:bg-primary transition-all shadow-[0_12px_32px_-6px_rgba(28,28,28,0.18)] hover:scale-105 active:scale-95 flex items-center justify-center group relative" type="button"><span class="material-symbols-outlined text-[28px] leading-none transition-transform group-hover:rotate-12">smart_toy</span><span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-tertiary rounded-full ring-2 ring-surface-container-lowest"></span></button></div></body></html>
