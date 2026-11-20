@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-tint": "#715c00", "surface-container-low": "#f3f3f4", "on-tertiary-container": "#596764", "on-error": "#ffffff", "secondary-container": "#dde5dc", "tertiary-container": "#d7e6e2", "on-primary-fixed-variant": "#554500", "error": "#ba1a1a", "outline-variant": "#cfc6b2", "primary-fixed-dim": "#e1c563", "surface-container-highest": "#e2e2e3", "surface-container-high": "#e8e8e9", "on-secondary": "#ffffff", "surface-bright": "#f9f9fa", "surface-dim": "#dadadb", "on-background": "#1a1c1d", "primary": "#715c00", "primary-fixed": "#ffe17c", "on-surface": "#1a1c1d", "tertiary-fixed": "#d7e6e2", "on-surface-variant": "#4c4637", "secondary-fixed": "#dde5dc", "surface": "#f9f9fa", "surface-container": "#eeeeef", "on-primary": "#ffffff", "secondary": "#59605a", "on-tertiary": "#ffffff", "on-secondary-fixed": "#161d18", "tertiary-fixed-dim": "#bbcac6", "on-secondary-container": "#5f6660", "surface-variant": "#e2e2e3", "on-tertiary-fixed-variant": "#3c4a47", "outline": "#7d7765", "on-tertiary-fixed": "#111e1c", "on-secondary-fixed-variant": "#414943", "primary-container": "#ffe17c", "inverse-surface": "#2f3132", "on-primary-container": "#786303", "background": "#f9f9fa", "inverse-on-surface": "#f0f1f2", "inverse-primary": "#e1c563", "error-container": "#ffdad6", "secondary-fixed-dim": "#c1c8c0", "on-primary-fixed": "#231b00", "on-error-container": "#93000a", "surface-container-lowest": "#ffffff", "tertiary": "#53615e" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "margin-mobile": "1rem", "margin": "2rem", "space-md": "1rem", "space-xl": "2.5rem" }, fontFamily: { "label-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "700" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.06em", fontWeight: "800" }], "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.03em", fontWeight: "800" }], "display": ["56px", { lineHeight: "64px", letterSpacing: "-0.04em", fontWeight: "800" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "500" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "700" }], "title-lg": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "800" }], "title-md": ["16px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "500" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "500" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.02em", fontWeight: "800" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9fa;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="MediSlot AI Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrC_uDq5kcpGzB2MT0oACwEMV3gjhOGLTZ4wkBAPSE6SGc6PsjjVbDWJgI1aNsLua-fUK5H4ErvIF_h45XRDbkr5EiLqx6S1P4jvP77USG6r703d1FoCb7ttkHusBoql8UgZ-uRrJ3wQgWpK3liosKDAUSZo7L3sriwidGvrPIkIBCNM6bJXTjcAnWn5y4pbOHiQd9US20d0uBd5n8tQ_LXRh0RjjZy_eBqiBhUbeMc"/><div class="flex flex-col truncate"><span class="font-headline-sm text-title-md text-on-surface truncate">MediSlot AI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Find Providers</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="Search and Notifications" class="w-11 h-11 flex items-center justify-center bg-surface-container-lowest text-on-surface rounded-lg border-2 border-black shadow-[2px_2px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-transform"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-11 h-11 p-0.5 flex items-center justify-center bg-surface-container-lowest rounded-full border-2 border-black shadow-[2px_2px_0px_#000000]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEjGhrvkFcRea3TnLnR-T5jqGB4jsK7VYJHlmtziwextzvnmy6OLQB-vDKys1hBa5RaWuVIZhnGK7ar8OhenzTwALm94aCuM1E4i-7vAf5lBlCgtfGWiseE0ZVMOI8AZxO4FQ8QbIyeqCZbpLuNtEdx5Yx1LJIx0I96F6ssQyMHY9YvQdkPaKASgs2-J2wWnOVMKsaZ43hiGgJ-wplZh-sGvWHL5EaJmrLO8afR9Q"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface px-margin-mobile flex-1"><div class="flex flex-col w-full pb-8 space-y-space-md">
+<!-- Title & Intro Section -->
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-2 self-start bg-secondary-fixed text-on-secondary-fixed px-2.5 py-0.5 rounded-full border-2 border-black text-label-sm font-label-sm uppercase tracking-wider shadow-[2px_2px_0px_#000000]">
+<span class="w-2 h-2 rounded-full bg-primary-fixed border border-black animate-pulse"></span>
+      Instant Dispatch
+    </div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-1">
+      Find Providers
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Search verified doctors, dentists, and healthcare specialists.
+    </p>
+</div>
+<!-- Neo-Brutalist Search Block -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest border-2 border-black rounded-lg p-1.5 shadow-[4px_4px_0px_#000000] focus-within:shadow-[6px_6px_0px_#000000] transition-all">
+<span class="material-symbols-outlined text-on-surface pl-2 text-[22px]">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline outline-none min-w-0" placeholder="Specialty, doctor name, clinic..." type="text"/>
+<button aria-label="AI Voice Search" class="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-primary-container text-on-surface rounded-md border-2 border-black shadow-[2px_2px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-transform">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<!-- Horizontal Scrollable Category Filter Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-margin-mobile px-margin-mobile no-scrollbar">
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-surface border-2 border-black shadow-[3px_3px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+      All (48)
+    </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface border-2 border-black shadow-[2px_2px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+      Doctors (18)
+    </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface border-2 border-black shadow-[2px_2px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+      Dentists (12)
+    </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface border-2 border-black shadow-[2px_2px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+      Consultants (8)
+    </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface border-2 border-black shadow-[2px_2px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+      Fitness Trainers (6)
+    </button>
+<button class="flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface border-2 border-black shadow-[2px_2px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+      Dermatology (4)
+    </button>
+</div>
+<!-- Availability & Criteria Quick Toggles -->
+<div class="flex flex-wrap gap-2 pt-0.5">
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-tertiary-container text-on-tertiary-fixed-variant border-2 border-black font-label-sm text-label-sm shadow-[2px_2px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-[15px]">bolt</span>
+      Available Today
+    </button>
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface border-2 border-black font-label-sm text-label-sm shadow-[2px_2px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+      Tomorrow Afternoon
+    </button>
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface border-2 border-black font-label-sm text-label-sm shadow-[2px_2px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-[15px]">verified_user</span>
+      In-Network Insurance
+    </button>
+<button class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface border-2 border-black font-label-sm text-label-sm shadow-[2px_2px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all">
+<span class="material-symbols-outlined text-[15px]">star</span>
+      Top Rated 4.5+
+    </button>
+</div>
+<!-- Provider List Stack -->
+<div class="flex flex-col gap-space-md pt-1">
+<!-- Provider Card 1 -->
+<div class="relative bg-surface-container-lowest border-2 border-black rounded-lg p-space-md shadow-[4px_4px_0px_#000000] flex flex-col gap-3">
+<!-- Top Meta Bar -->
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 rounded-lg border-2 border-black bg-surface-container overflow-hidden shadow-[2px_2px_0px_#000000] flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional studio portrait of Dr. Sarah Jenkins, an experienced female cardiologist wearing a clinical white coat and stethoscope, set against a warm minimalist architectural clinic background with sharp lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNUKSoQZkW4qI9vJJ6eEoE0OaHI0WOdTn6LlR6OzJfeFTT6mE-bonF5wYlT2f8f7dhAZwPoRLjsnHv1DOUTX9rglH34qIC4NmvxBqwAIYEl-ZJRDUgoi35rDm5m_qKHms7MEtb98w1ikNsRg7iUIKt_tGu-bUVrFbGOm7iZB6-D-w0qomWveX9Xidp2hcF5eCGwwSoChsHaN6CdeP_VzrRoPJN6CoFY4EmC-X5wgU"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-title-md text-title-md text-on-surface font-bold truncate">Dr. Sarah Jenkins, MD</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant truncate">Cardiology &amp; Internal Medicine</p>
+<p class="font-body-sm text-body-sm text-outline truncate flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">domain</span>
+              CityCare Health Plaza
+            </p>
+</div>
+</div>
+<button aria-label="Bookmark provider" class="w-8 h-8 rounded border-2 border-black flex items-center justify-center bg-surface-container-lowest active:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<!-- Rating & Qualifications Ribbon -->
+<div class="flex flex-wrap items-center gap-2 pt-1 border-t-2 border-black/10">
+<div class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded border border-black text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface font-bold">4.9</span>
+<span class="text-on-surface-variant">(142 reviews)</span>
+</div>
+<div class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded border border-black text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">workspace_premium</span>
+          12 Yrs Exp
+        </div>
+<div class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded border border-black text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">translate</span>
+          EN, ES
+        </div>
+</div>
+<!-- Next Available Slot Neo-Badge -->
+<div class="flex items-center justify-between bg-primary-container/40 border-2 border-black rounded-md p-2 shadow-[2px_2px_0px_#000000]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface">alarm_on</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Next Opening</span>
+</div>
+<span class="font-label-md text-label-md bg-primary-container text-on-surface px-2 py-0.5 rounded border border-black shadow-[1px_1px_0px_#000000]">
+          Tomorrow, 10:30 AM
+        </span>
+</div>
+<!-- Action Button Group -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="w-full py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md border-2 border-black shadow-[3px_3px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">id_card</span>
+          View Profile
+        </button>
+<button class="w-full py-2.5 rounded-lg bg-primary-container text-on-surface font-label-md text-label-md border-2 border-black shadow-[3px_3px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">event_available</span>
+          Book Slot
+        </button>
+</div>
+</div>
+<!-- Provider Card 2 -->
+<div class="relative bg-surface-container-lowest border-2 border-black rounded-lg p-space-md shadow-[4px_4px_0px_#000000] flex flex-col gap-3">
+<!-- Top Meta Bar -->
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 rounded-lg border-2 border-black bg-surface-container overflow-hidden shadow-[2px_2px_0px_#000000] flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Editorial headshot of Dr. Marcus Vance, a professional dentist in clinical attire with surgical magnification glasses on forehead, confident and friendly expression, crisp medical clinic illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR4HsY8DwEb4oY5fCVytHCSDW-Prucxi1PrNCIFV_fO-lIep4IUzDI9SJWbB1XmvVOg_UYuanLlIapsZmwt8EIOcSZHNA5ErrRT0lKwzvZTucE4Bi2IOE6h13lM-7C45_CEDoEl6EQKNpEQpMwSWcvJUthP8843MmPG8wulEUdbcVRQIGS3pM78rqB1T3blNSkYfDB7v_jFe1bVASgKz9_9NRzzFDZuXcGiutyF_A"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-title-md text-title-md text-on-surface font-bold truncate">Dr. Marcus Vance, DDS</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant truncate">Cosmetic &amp; General Dentistry</p>
+<p class="font-body-sm text-body-sm text-outline truncate flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">domain</span>
+              Downtown Dental Studio
+            </p>
+</div>
+</div>
+<button aria-label="Bookmark provider" class="w-8 h-8 rounded border-2 border-black flex items-center justify-center bg-surface-container-lowest active:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<!-- Rating & Qualifications Ribbon -->
+<div class="flex flex-wrap items-center gap-2 pt-1 border-t-2 border-black/10">
+<div class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded border border-black text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface font-bold">4.8</span>
+<span class="text-on-surface-variant">(98 reviews)</span>
+</div>
+<div class="inline-flex items-center gap-1 bg-surface-container-low px-2 py-0.5 rounded border border-black text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">dentistry</span>
+          Invisalign Certified
+        </div>
+</div>
+<!-- Next Available Slot Neo-Badge -->
+<div class="flex items-center justify-between bg-primary-container/40 border-2 border-black rounded-md p-2 shadow-[2px_2px_0px_#000000]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface">alarm_on</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Next Opening</span>
+</div>
+<span class="font-label-md text-label-md bg-primary-container text-on-surface px-2 py-0.5 rounded border border-black shadow-[1px_1px_0px_#000000]">
+          Tomorrow, 2:15 PM
+        </span>
+</div>
+<!-- Action Button Group -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="w-full py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md border-2 border-black shadow-[3px_3px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">id_card</span>
+          View Profile
+        </button>
+<button class="w-full py-2.5 rounded-lg bg-primary-container text-on-surface font-label-md text-label-md border-2 border-black shadow-[3px_3px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">event_available</span>
+          Book Slot
+        </button>
+</div>
+</div>
+<!-- Provider Card 3 -->
+<div class="relative bg-surface-container-lowest border-2 border-black rounded-lg p-space-md shadow-[4px_4px_0px_#000000] flex flex-col gap-3">
+<!-- Top Meta Bar -->
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 rounded-lg border-2 border-black bg-surface-container overflow-hidden shadow-[2px_2px_0px_#000000] flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Modern clinical portrait of Dr. Priya Patel, a calm compassionate psychologist wearing stylish modern attire, warm natural therapy office setting with books and soft ambient greenery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIWdI8FfJjA4_HrXZHXAcxyjQo0uQoCch0P3IqD6Ql4x0O-P3I7Ky4YQNShFaZzkono6WFIeJ7Xk0Q5KHxoao-qssbzVcEWAd87HnSRRn2J3yvjEatFJjzFyFyrptm4zLGwBRNw0_YfPbTi4xKrVNIisOtYKuNEyuyRuwzD5NdfhxRAXE2iGy2tjBUjOXKIkM1ZYh8GDKtjHsoy2GlUMZlPJdBze4r2vdciWZGfeQ"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-title-md text-title-md text-on-surface font-bold truncate">Dr. Priya Patel, PsyD</h2>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant truncate">Clinical Psychologist &amp; Therapy</p>
+<p class="font-body-sm text-body-sm text-outline truncate flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">domain</span>
+              MindWell Health
+            </p>
+</div>
+</div>
+<button aria-label="Bookmark provider" class="w-8 h-8 rounded border-2 border-black flex items-center justify-center bg-surface-container-lowest active:bg-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<!-- Rating & Qualifications Ribbon -->
+<div class="flex flex-wrap items-center gap-2 pt-1 border-t-2 border-black/10">
+<div class="inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded border border-black text-label-sm font-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface font-bold">5.0</span>
+<span class="text-on-surface-variant">(64 reviews)</span>
+</div>
+<div class="inline-flex items-center gap-1 bg-secondary-container px-2 py-0.5 rounded border border-black text-label-sm font-label-sm text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[14px]">videocam</span>
+          Telehealth Available
+        </div>
+</div>
+<!-- Next Available Slot Neo-Badge -->
+<div class="flex items-center justify-between bg-surface-container-high border-2 border-black rounded-md p-2 shadow-[2px_2px_0px_#000000]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface">alarm_on</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Next Opening</span>
+</div>
+<span class="font-label-md text-label-md bg-surface-container-lowest text-on-surface px-2 py-0.5 rounded border border-black shadow-[1px_1px_0px_#000000]">
+          Wed, Oct 30, 4:00 PM
+        </span>
+</div>
+<!-- Action Button Group -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="w-full py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md border-2 border-black shadow-[3px_3px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">id_card</span>
+          View Profile
+        </button>
+<button class="w-full py-2.5 rounded-lg bg-primary-container text-on-surface font-label-md text-label-md border-2 border-black shadow-[3px_3px_0px_#000000] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[16px]">event_available</span>
+          Book Slot
+        </button>
+</div>
+</div>
+</div>
+<!-- AI Match Helper Card -->
+<div class="bg-primary-container border-2 border-black rounded-xl p-space-md shadow-[4px_4px_0px_#000000] flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest border-2 border-black flex items-center justify-center flex-shrink-0 shadow-[2px_2px_0px_#000000]">
+<span class="material-symbols-outlined text-primary text-[22px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-md text-label-md text-on-surface font-bold">Can't find your specialist?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Let MediSlot AI automatically match open cancellations.</span>
+</div>
+<button aria-label="Open AI Assistant" class="px-2.5 py-1.5 bg-surface-container-lowest text-on-surface rounded-md border-2 border-black font-label-sm text-label-sm shadow-[2px_2px_0px_#000000] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none">
+      Match
+    </button>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="bg-primary-container text-on-surface border-2 border-black shadow-[2px_2px_0px_#000000] font-label-md"><div class="flex items-center justify-between h-20 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 px-space-xs rounded-lg text-on-surface-variant transition-all" data-path="customer-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-sm text-label-sm">Overview</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 px-space-xs rounded-lg transition-all bg-primary-container text-on-surface border-2 border-black shadow-[2px_2px_0px_#000000] font-label-md" data-path="find-providers" href="#"><span class="material-symbols-outlined text-[20px]">stethoscope</span><span class="font-label-sm text-label-sm">Providers</span></a><a class="flex flex-col items-center justify-center -translate-y-2 w-14 h-14 bg-primary-container text-on-surface rounded-xl border-2 border-black shadow-[4px_4px_0px_#000000] active:translate-x-[2px] active:translate-y-0 active:shadow-none transition-transform relative" data-path="ai-booking-assistant" href="#"><span class="material-symbols-outlined text-[24px]">smart_toy</span><span class="font-label-sm text-label-sm">AI Slot</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 px-space-xs rounded-lg text-on-surface-variant transition-all" data-path="my-appointments-&amp;-cancellation" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span class="font-label-sm text-label-sm">Bookings</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 px-space-xs rounded-lg text-on-surface-variant transition-all" data-path="admin-operations-&amp;-time-slot-management" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span class="font-label-sm text-label-sm">Admin</span></a></div></nav></body></html>
